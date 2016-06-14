@@ -1,5 +1,5 @@
 //
-//  RootViewController.h
+//  CXRSplitController.h
 //  Chat
 //
 //  Created by lanou3g on 16/6/12.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface RootViewController : UIViewController
+@interface CXRSplitController : UIViewController
 
 @end

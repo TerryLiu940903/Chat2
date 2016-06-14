@@ -1,19 +1,15 @@
 //
 //  RootViewController.m
-//  Chat2
+//  Chat
 //
-//  Created by lanou3g on 16/6/13.
+//  Created by lanou3g on 16/6/12.
 //  Copyright © 2016年 Terry. All rights reserved.
 //
 
 #import "RootViewController.h"
-#import "ChatTableViewController.h"
-#import "ContactTableViewController.h"
-#import "DynamicTableViewController.h"
-#import "CustomTabBar.h"
-#import "UIImage+ImageContentViewColor.h"
+#import "CXRSplitController.h"
 
-@interface RootViewController ()
+@interface RootViewController ()<UITableViewDataSource, UITableViewDelegate>
 
 @end
 
@@ -23,79 +19,45 @@
     [super viewDidLoad];
     
     
-    //主题颜色
-    [[UINavigationBar appearance] setBackgroundImage:[UIImage imageWithColor:[UIColor cyanColor]] forBarMetrics:UIBarMetricsDefault];
-    [[UITabBar appearance] setBackgroundImage:[UIImage imageWithColor:[UIColor cyanColor]]];
+    //新建一个菜单栏放在最底部，设置大小，这样就可以在拖动上层界面的时候，将底下的菜单栏漏出来
+    UIView * menuView = [[UIView alloc] init];
+    [self.view addSubview:menuView];
+    menuView.frame = CGRectMake(0, 0, self.view.frame.size.width * 0.8, self.view.frame.size.height);
+    //设置菜单栏的颜色为红色
+    menuView.backgroundColor = [UIColor redColor];
+    
+    UITableView *personal = [[UITableView alloc] initWithFrame:CGRectMake(20, 250, self.view.frame.size.width * 0.8 - 140, self.view.frame.size.height - 340) style:UITableViewStylePlain];
+    [menuView addSubview:personal];
+    [personal registerClass:[UITableViewCell class] forCellReuseIdentifier:@"cell"];
+//    personal.scrollEnabled = YES;
+    personal.delegate = self;
+    personal.dataSource = self;
+    
+    CXRSplitController * splitViewController = [[CXRSplitController alloc] init];
+    //将splitViewController的控制器和根视图都交由跟控制器进行管理
+    [self addChildViewController:splitViewController];
+    [self.view addSubview:splitViewController.view];
     
     
-    
-    [self setTabBarItemTextAttribute];
-    [self createChildViewControllers];
-    [self setCustomTabBar];
-    
-    
-    
-}
-
-
-
-
-
-
-#pragma 设置tabBar文本的标题颜色
-- (void)setTabBarItemTextAttribute {
-    //普通状态下的文本颜色
-    NSMutableDictionary *normalDic = [NSMutableDictionary dictionary];
-    normalDic[NSForegroundColorAttributeName] = [UIColor whiteColor];
-    
-    //选中状态下
-    NSMutableDictionary *selectedDic = [NSMutableDictionary dictionary];
-    selectedDic[NSForegroundColorAttributeName] = [UIColor grayColor];
-    
-    //配置文本属性
-    UITabBarItem *tabBarItem = [UITabBarItem appearance];
-    [tabBarItem setTitleTextAttributes:normalDic forState:UIControlStateNormal];
-    [tabBarItem setTitleTextAttributes:selectedDic forState:UIControlStateSelected];
-    
-}
-
-#pragma 给UITabBarController添加子视图控制器
-- (void)addOneChildViewController:(UIViewController *)viewController Title:(NSString *)title NormalImage:(NSString *)normalImage SelectImage:(NSString *)selectImage {
-    //给子视图控制器的tabBarItem赋值
-    viewController.tabBarItem.title = title;
-    viewController.tabBarItem.image = [UIImage imageNamed:normalImage];
-    UIImage *image = [UIImage imageNamed:selectImage];
-    
-    //设置渲染模式
-    image = [image imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
-    viewController.tabBarItem.selectedImage = image;
-    
-    [self addChildViewController:viewController];
-}
-
-#pragma 添加子视图控制器
-- (void)createChildViewControllers {
-    //消息页面
-    ChatTableViewController *chatVC = [[ChatTableViewController alloc] initWithStyle:UITableViewStylePlain];
-    [self addOneChildViewController:chatVC Title:@"消息" NormalImage:@"" SelectImage:@""];
-    
-    //联系人页面
-    ContactTableViewController *contactVC = [[ContactTableViewController alloc] initWithStyle:UITableViewStylePlain];
-    [self addOneChildViewController:contactVC Title:@"联系人" NormalImage:@"" SelectImage:@""];
-    
-    //动态页面
-    DynamicTableViewController *dynamicVC = [[DynamicTableViewController alloc] initWithStyle:UITableViewStylePlain];
-    [self addOneChildViewController:dynamicVC Title:@"动态" NormalImage:@"" SelectImage:@""];
-}
-
-#pragma 获取自定义tabBar
-- (void)setCustomTabBar {
-    [self setValue:[[CustomTabBar alloc] init] forKey:@"tabBar"];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return 10;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell" forIndexPath:indexPath];
+    if (cell == nil) {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"cell"];
+    }
+    cell.textLabel.text = @"测试数据";
+    
+    return cell;
 }
 
 /*
