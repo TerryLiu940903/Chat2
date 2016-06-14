@@ -1,0 +1,496 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D642EE431D0E8212007FDED2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D642EE421D0E8212007FDED2 /* main.m */; };
+		D642EE461D0E8212007FDED2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D642EE451D0E8212007FDED2 /* AppDelegate.m */; };
+		D642EE4E1D0E8212007FDED2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D642EE4D1D0E8212007FDED2 /* Assets.xcassets */; };
+		D642EE511D0E8212007FDED2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D642EE4F1D0E8212007FDED2 /* LaunchScreen.storyboard */; };
+		D642EE671D0E85FC007FDED2 /* UIImage+ImageContentViewColor.m in Sources */ = {isa = PBXBuildFile; fileRef = D642EE661D0E85FC007FDED2 /* UIImage+ImageContentViewColor.m */; };
+		D642EE7A1D0E8869007FDED2 /* ChatTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D642EE791D0E8869007FDED2 /* ChatTableViewController.m */; };
+		D642EE7D1D0E887A007FDED2 /* ContactTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D642EE7C1D0E887A007FDED2 /* ContactTableViewController.m */; };
+		D642EE801D0E88AB007FDED2 /* DynamicTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D642EE7F1D0E88AB007FDED2 /* DynamicTableViewController.m */; };
+		D642EE831D0E88DE007FDED2 /* CustomTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = D642EE821D0E88DE007FDED2 /* CustomTabBar.m */; };
+		D642EE911D0EA66D007FDED2 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D642EE901D0EA66D007FDED2 /* RootViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		D642EE3E1D0E8212007FDED2 /* Chat2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Chat2.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D642EE421D0E8212007FDED2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D642EE441D0E8212007FDED2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D642EE451D0E8212007FDED2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D642EE4D1D0E8212007FDED2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D642EE501D0E8212007FDED2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D642EE521D0E8212007FDED2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D642EE651D0E85FC007FDED2 /* UIImage+ImageContentViewColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ImageContentViewColor.h"; sourceTree = "<group>"; };
+		D642EE661D0E85FC007FDED2 /* UIImage+ImageContentViewColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ImageContentViewColor.m"; sourceTree = "<group>"; };
+		D642EE781D0E8869007FDED2 /* ChatTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatTableViewController.h; sourceTree = "<group>"; };
+		D642EE791D0E8869007FDED2 /* ChatTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatTableViewController.m; sourceTree = "<group>"; };
+		D642EE7B1D0E887A007FDED2 /* ContactTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactTableViewController.h; sourceTree = "<group>"; };
+		D642EE7C1D0E887A007FDED2 /* ContactTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactTableViewController.m; sourceTree = "<group>"; };
+		D642EE7E1D0E88AB007FDED2 /* DynamicTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DynamicTableViewController.h; sourceTree = "<group>"; };
+		D642EE7F1D0E88AB007FDED2 /* DynamicTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DynamicTableViewController.m; sourceTree = "<group>"; };
+		D642EE811D0E88DE007FDED2 /* CustomTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTabBar.h; sourceTree = "<group>"; };
+		D642EE821D0E88DE007FDED2 /* CustomTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTabBar.m; sourceTree = "<group>"; };
+		D642EE8F1D0EA66D007FDED2 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		D642EE901D0EA66D007FDED2 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D642EE3B1D0E8212007FDED2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D642EE351D0E8212007FDED2 = {
+			isa = PBXGroup;
+			children = (
+				D642EE401D0E8212007FDED2 /* Chat2 */,
+				D642EE3F1D0E8212007FDED2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D642EE3F1D0E8212007FDED2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D642EE3E1D0E8212007FDED2 /* Chat2.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D642EE401D0E8212007FDED2 /* Chat2 */ = {
+			isa = PBXGroup;
+			children = (
+				D642EE441D0E8212007FDED2 /* AppDelegate.h */,
+				D642EE451D0E8212007FDED2 /* AppDelegate.m */,
+				D642EE8F1D0EA66D007FDED2 /* RootViewController.h */,
+				D642EE901D0EA66D007FDED2 /* RootViewController.m */,
+				D642EE581D0E829D007FDED2 /* BaseClass */,
+				D642EE5D1D0E829D007FDED2 /* Framework */,
+				D642EE5E1D0E829D007FDED2 /* Header */,
+				D642EE701D0E880C007FDED2 /* 消息界面 */,
+				D642EE6C1D0E880C007FDED2 /* 联系人界面 */,
+				D642EE681D0E880C007FDED2 /* 动态界面 */,
+				D642EE741D0E880C007FDED2 /* 左滑个人中心 */,
+				D642EE5F1D0E829D007FDED2 /* Resource */,
+				D642EE601D0E829D007FDED2 /* Third */,
+				D642EE411D0E8212007FDED2 /* Supporting Files */,
+				D642EE4D1D0E8212007FDED2 /* Assets.xcassets */,
+				D642EE4F1D0E8212007FDED2 /* LaunchScreen.storyboard */,
+				D642EE521D0E8212007FDED2 /* Info.plist */,
+			);
+			path = Chat2;
+			sourceTree = "<group>";
+		};
+		D642EE411D0E8212007FDED2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D642EE421D0E8212007FDED2 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D642EE581D0E829D007FDED2 /* BaseClass */ = {
+			isa = PBXGroup;
+			children = (
+				D642EE651D0E85FC007FDED2 /* UIImage+ImageContentViewColor.h */,
+				D642EE661D0E85FC007FDED2 /* UIImage+ImageContentViewColor.m */,
+				D642EE811D0E88DE007FDED2 /* CustomTabBar.h */,
+				D642EE821D0E88DE007FDED2 /* CustomTabBar.m */,
+			);
+			path = BaseClass;
+			sourceTree = "<group>";
+		};
+		D642EE5D1D0E829D007FDED2 /* Framework */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Framework;
+			sourceTree = "<group>";
+		};
+		D642EE5E1D0E829D007FDED2 /* Header */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Header;
+			sourceTree = "<group>";
+		};
+		D642EE5F1D0E829D007FDED2 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		D642EE601D0E829D007FDED2 /* Third */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Third;
+			sourceTree = "<group>";
+		};
+		D642EE681D0E880C007FDED2 /* 动态界面 */ = {
+			isa = PBXGroup;
+			children = (
+				D642EE691D0E880C007FDED2 /* Controller */,
+				D642EE6A1D0E880C007FDED2 /* Model */,
+				D642EE6B1D0E880C007FDED2 /* View */,
+			);
+			name = "动态界面";
+			path = "Framework/动态界面";
+			sourceTree = "<group>";
+		};
+		D642EE691D0E880C007FDED2 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D642EE7E1D0E88AB007FDED2 /* DynamicTableViewController.h */,
+				D642EE7F1D0E88AB007FDED2 /* DynamicTableViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		D642EE6A1D0E880C007FDED2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D642EE6B1D0E880C007FDED2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D642EE6C1D0E880C007FDED2 /* 联系人界面 */ = {
+			isa = PBXGroup;
+			children = (
+				D642EE6D1D0E880C007FDED2 /* Controller */,
+				D642EE6E1D0E880C007FDED2 /* Model */,
+				D642EE6F1D0E880C007FDED2 /* View */,
+			);
+			name = "联系人界面";
+			path = "Framework/联系人界面";
+			sourceTree = "<group>";
+		};
+		D642EE6D1D0E880C007FDED2 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D642EE7B1D0E887A007FDED2 /* ContactTableViewController.h */,
+				D642EE7C1D0E887A007FDED2 /* ContactTableViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		D642EE6E1D0E880C007FDED2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D642EE6F1D0E880C007FDED2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D642EE701D0E880C007FDED2 /* 消息界面 */ = {
+			isa = PBXGroup;
+			children = (
+				D642EE711D0E880C007FDED2 /* Controller */,
+				D642EE721D0E880C007FDED2 /* Model */,
+				D642EE731D0E880C007FDED2 /* View */,
+			);
+			name = "消息界面";
+			path = "Framework/消息界面";
+			sourceTree = "<group>";
+		};
+		D642EE711D0E880C007FDED2 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D642EE781D0E8869007FDED2 /* ChatTableViewController.h */,
+				D642EE791D0E8869007FDED2 /* ChatTableViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		D642EE721D0E880C007FDED2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D642EE731D0E880C007FDED2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D642EE741D0E880C007FDED2 /* 左滑个人中心 */ = {
+			isa = PBXGroup;
+			children = (
+				D642EE751D0E880C007FDED2 /* Controller */,
+				D642EE761D0E880C007FDED2 /* Model */,
+				D642EE771D0E880C007FDED2 /* View */,
+			);
+			name = "左滑个人中心";
+			path = "Framework/左滑个人中心";
+			sourceTree = "<group>";
+		};
+		D642EE751D0E880C007FDED2 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		D642EE761D0E880C007FDED2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D642EE771D0E880C007FDED2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D642EE3D1D0E8212007FDED2 /* Chat2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D642EE551D0E8212007FDED2 /* Build configuration list for PBXNativeTarget "Chat2" */;
+			buildPhases = (
+				D642EE3A1D0E8212007FDED2 /* Sources */,
+				D642EE3B1D0E8212007FDED2 /* Frameworks */,
+				D642EE3C1D0E8212007FDED2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Chat2;
+			productName = Chat2;
+			productReference = D642EE3E1D0E8212007FDED2 /* Chat2.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D642EE361D0E8212007FDED2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = Terry;
+				TargetAttributes = {
+					D642EE3D1D0E8212007FDED2 = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = X6F8KD5PFD;
+					};
+				};
+			};
+			buildConfigurationList = D642EE391D0E8212007FDED2 /* Build configuration list for PBXProject "Chat2" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D642EE351D0E8212007FDED2;
+			productRefGroup = D642EE3F1D0E8212007FDED2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D642EE3D1D0E8212007FDED2 /* Chat2 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D642EE3C1D0E8212007FDED2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D642EE511D0E8212007FDED2 /* LaunchScreen.storyboard in Resources */,
+				D642EE4E1D0E8212007FDED2 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D642EE3A1D0E8212007FDED2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D642EE831D0E88DE007FDED2 /* CustomTabBar.m in Sources */,
+				D642EE801D0E88AB007FDED2 /* DynamicTableViewController.m in Sources */,
+				D642EE461D0E8212007FDED2 /* AppDelegate.m in Sources */,
+				D642EE7A1D0E8869007FDED2 /* ChatTableViewController.m in Sources */,
+				D642EE911D0EA66D007FDED2 /* RootViewController.m in Sources */,
+				D642EE431D0E8212007FDED2 /* main.m in Sources */,
+				D642EE671D0E85FC007FDED2 /* UIImage+ImageContentViewColor.m in Sources */,
+				D642EE7D1D0E887A007FDED2 /* ContactTableViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D642EE4F1D0E8212007FDED2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D642EE501D0E8212007FDED2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D642EE531D0E8212007FDED2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		D642EE541D0E8212007FDED2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D642EE561D0E8212007FDED2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Chat2/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Terry.Chat2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D642EE571D0E8212007FDED2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Chat2/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Terry.Chat2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D642EE391D0E8212007FDED2 /* Build configuration list for PBXProject "Chat2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D642EE531D0E8212007FDED2 /* Debug */,
+				D642EE541D0E8212007FDED2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D642EE551D0E8212007FDED2 /* Build configuration list for PBXNativeTarget "Chat2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D642EE561D0E8212007FDED2 /* Debug */,
+				D642EE571D0E8212007FDED2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D642EE361D0E8212007FDED2 /* Project object */;
+}
